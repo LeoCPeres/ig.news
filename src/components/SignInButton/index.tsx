@@ -3,9 +3,8 @@ import { FiX } from 'react-icons/fi'
 import styles from './styles.module.scss'
 import { useSession, signIn, signOut } from 'next-auth/react'
 
-export function SignInButtom() {
-  const isUserLoggedIn = true;
-  const { data: session, status } = useSession();
+export function SignInButton() {
+  const { data: session } = useSession();
 
   return session ? (
     <button type="button" className={styles.signInButton} onClick={() => signOut()}>
