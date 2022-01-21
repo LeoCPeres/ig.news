@@ -22,7 +22,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/services/prismic.js"
   ],
   "exclude": [
     "node_modules"
