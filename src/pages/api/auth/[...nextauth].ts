@@ -81,7 +81,8 @@ export default NextAuth({
         return { ...session, activeSubscription: userActiveSubscription };
       }
       catch (error) {
-        throw error;
+        return { ...session, activeSubscription: null }
+
       }
 
     },
